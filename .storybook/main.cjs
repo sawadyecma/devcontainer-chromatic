@@ -1,3 +1,7 @@
+// .storybook/main.js|cjs|ts
+
+const { mergeConfig } = require('vite');
+
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
@@ -14,5 +18,13 @@ module.exports = {
   },
   "features": {
     "storyStoreV7": true
-  }
+  },
+  async viteFinal(config) {
+    // Merge custom configuration into the default config
+    return mergeConfig(config, {
+      build: {
+        chunkSizeWarningLimit: 1000
+      },
+    });
+  },
 }
