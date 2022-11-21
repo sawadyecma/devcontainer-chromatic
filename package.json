@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic":"chromatic --project-token=3933f1460262 --storybook-build-dir storybook-static"
+    "chromatic":"chromatic --project-token=3933f1460262 --storybook-build-dir storybook-static --exit-zero-on-changes"
   },
   "dependencies": {
     "react": "^18.2.0",
