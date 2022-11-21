@@ -1,0 +1,5 @@
+{
+  "name": "chromatic-dev",
+  "dockerFile": "Dockerfile",
+  "postCreateCommand": "npm ci"
+}
